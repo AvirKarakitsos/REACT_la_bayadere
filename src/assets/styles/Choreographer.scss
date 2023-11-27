@@ -1,0 +1,23 @@
+.choreoContainer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 20% 1fr 20%;
+
+    &__image {
+        height: 325px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    &__text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & > p {
+            width: 60%;
+            text-align: justify;
+            font-size: 17px;
+        }
+    }
+}
