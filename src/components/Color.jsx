@@ -1,25 +1,33 @@
-import '../assets/styles/Parallax.scss'
-import parallax1 from "../assets/images/baya-para-1.jpg"
+import '../assets/styles/Color.scss'
+import costumes from "../assets/videos/costumes.mp4"
 import { useRef } from "react"
 import { motion, useScroll, useTransform } from "framer-motion"
 
-function Header() {
-    const ref = useRef()
+function Color() {
+    const ref = useRef(null)
 
     const { scrollYProgress } = useScroll({
         ref: ref,
-        offset: ["start start", "end start"]
+        offset: ["0 1", "1.5 1"]
     })
-
-    const backgroundDansers = useTransform(scrollYProgress, [0,1], ["0%","200%"])
-    const title = useTransform(scrollYProgress, [0,1], ["0%","100%"])
+    
+    const speed = useTransform(scrollYProgress, [0,1], ["-400%","282%"])
 
     return (
-        <div ref={ref} className="boxParallax">
-            <motion.h1 style={ {y: title} } className="boxParallax__title">La Bayadère</motion.h1>
-            <motion.img style={ {y: backgroundDansers} } className="boxParallax__background boxParallax__background--dansers" src={parallax1} alt="parallax-1"/>
+        <div className="container">
+            <h2>Les couleurs</h2>
+            <div className="colorContainer">
+                <div className="colorContainer__text">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut temporibus eligendi numquam sapiente id consequatur cupiditate, dolore odio harum nihil veritatis est nam doloribus assumenda itaque. Illum assumenda tempore eos?</p>
+                </div>
+                <div ref={ref} className="colorContainer__video">
+                    <motion.video style={ {y: speed, width: "400px"} } autoPlay muted loop>
+                        <source src={costumes} type="video/mp4"/>
+                    </motion.video>
+                </div>
+            </div>
         </div>
     )
 }
 
-export default Header
+export default Color
