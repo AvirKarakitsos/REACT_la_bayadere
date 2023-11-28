@@ -1,12 +1,11 @@
-.choreoContainer {
+.composerContainer {
     width: 100%;
-    display: grid;
-    grid-template-columns: 23% 1fr 23%;
+    display: flex;
 
     &__image > img {
-        height: 325px;
-        width: 100%;
-        object-fit: cover;
+          
+            height: 500px;
+            object-fit: cover;
     }
 
     &__text {

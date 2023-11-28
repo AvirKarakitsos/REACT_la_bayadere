@@ -1,15 +1,14 @@
-import Parallax from './components/Parallax.jsx'
 import './App.scss'
+import Parallax from './components/Parallax.jsx'
 import Choreographer from './components/Choreographer.jsx'
+import Composer from './components/Composer.jsx'
 
 function App() {
   return (
       <main>
         <Parallax />
         <Choreographer/>
-        <div className="container-2">
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut sint nihil esse vero dolores corporis? Sit sequi sapiente nulla porro excepturi voluptas laboriosam! Vitae cumque veritatis eius libero alias impedit.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut sint nihil esse vero dolores corporis? Sit sequi sapiente nulla porro excepturi voluptas laboriosam! Vitae cumque veritatis eius libero alias impedit.</p>
-        </div>
+        <Composer/>
       </main>
   )
 }
