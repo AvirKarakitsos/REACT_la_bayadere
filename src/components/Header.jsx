@@ -3,7 +3,7 @@ import parallax1 from "../assets/images/baya-para-1.jpg"
 import { useRef } from "react"
 import { motion, useScroll, useTransform } from "framer-motion"
 
-function Header() {
+function Parallax() {
     const ref = useRef()
 
     const { scrollYProgress } = useScroll({
@@ -22,4 +22,4 @@ function Header() {
     )
 }
 
-export default Header
+export default Parallax
