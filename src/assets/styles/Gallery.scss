@@ -98,4 +98,37 @@ $widthGrid: 315px;
             }
     }
 
+    .grid3 {
+        grid-template-areas: 
+            'image11 image12 image12'
+            'image13 image13 image13'
+            'image15 image15 image14';
+            
+            & > .image11 {
+                grid-area: image11;
+                width: 130px;
+                height: 190px;
+            }
+            & > .image12 {
+                grid-area: image12;
+                width: 170px;
+                height: 190px;
+            }
+            & > .image13 {
+                grid-area: image13;
+                width: 100%;
+                height: 150px;
+            }
+            & > .image14 {
+                grid-area: image14;
+                width: 150px;
+                height: 175px;
+            }
+            & > .image15 {
+                grid-area: image15;
+                width: 150px;
+                height: 150px;
+            }
+    }
+
 }
