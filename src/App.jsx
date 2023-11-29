@@ -13,9 +13,9 @@ function App() {
         <Composer/>
         <Nikiya/>
         <Color/>
-        <div className="container">
-          <h2>Test</h2>
-        </div>
+        <footer className="container">
+          <p>Merci d&apos;avoir regardé</p>
+        </footer>
       </main>
   )
 }

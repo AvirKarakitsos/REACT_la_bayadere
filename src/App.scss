@@ -17,3 +17,13 @@ main {
         font-size: 50px;
     }
 }
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    & > p {
+        font-size: 100px;
+    }
+}
