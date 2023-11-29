@@ -7,6 +7,7 @@ import Color from './components/Color.jsx'
 import Gallery from './components/Gallery.jsx'
 
 function App() {
+
   return (
       <>
         <Header/>
@@ -15,7 +16,7 @@ function App() {
           <Composer/>
           <Nikiya/>
           <Color/>
-          <Gallery nbr={1}/>
+          <Gallery/>
         </main>
         <footer>
           <p>Merci d&apos;avoir regardé</p>
