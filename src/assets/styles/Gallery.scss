@@ -1,0 +1,65 @@
+$animationSpeed: 40s;
+
+@keyframes scroll {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(calc(-250px * 5))}
+}
+
+.galleryContainer {
+	width: 90%;
+	position: relative;
+	overflow:hidden;
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+    background: white;
+    border-bottom: 3px solid #fff;
+
+    .slide-track {
+		// animation: scroll $animationSpeed linear infinite;
+		display: flex;
+		width: calc(250px * 10);
+	}
+
+    .slide {
+        height: 500px;
+		width: 315px;
+        padding: 3px;
+        display: grid;
+        grid-template-areas: 
+            'image1 image1 image2'
+            'image3 image4 image4'
+            'image5 image5 image5';
+        
+        gap: 5px;
+        overflow: hidden;
+        
+        img {
+            object-fit: cover;
+        }
+	}
+
+
+    .grid1 > .image1{
+        grid-area: image1;
+        width: 200px;
+        height: 160px;
+    }
+    .grid1 > .image2{
+        grid-area: image2;
+        width: 100px;
+        height: 160px;
+    }
+    .grid1 > .image3{
+        grid-area: image3;
+        width: 100px;
+        height: 150px;
+    }
+    .grid1 > .image4{
+        grid-area: image4;
+        width: 200px;
+        height: 150px;
+    }
+    .grid1 > .image5{
+        grid-area: image5;
+        width: 100%;
+    }
+}
