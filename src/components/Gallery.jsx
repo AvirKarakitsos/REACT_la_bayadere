@@ -1,7 +1,7 @@
 import '../assets/styles/Gallery.scss'
 
 function Gallery() {
-    const arrGrid =  Array.from(Array(4).keys()).slice(1)
+    const arrGrid =  Array.from(Array(5).keys()).slice(1)
     const arrImages = Array.from(Array(6).keys()).slice(1)
 
     return(

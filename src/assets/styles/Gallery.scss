@@ -3,7 +3,7 @@ $widthGrid: 315px;
 
 @keyframes scroll {
 	0% { transform: translateX(0); }
-	100% { transform: translateX(calc(widthGrid * 5))}
+	100% { transform: translateX(calc($widthGrid * 5))}
 }
 
 .galleryContainer {
@@ -17,12 +17,12 @@ $widthGrid: 315px;
     .slide-track {
 		// animation: scroll $animationSpeed linear infinite;
 		display: flex;
-		width: calc(widthGrid * 10);
+		width: calc($widthGrid * 10);
 	}
 
     .slide {
         height: 500px;
-		width: 315px;
+		width: $widthGrid;
         padding: 3px;
         display: grid;
         gap: 5px;
@@ -128,6 +128,40 @@ $widthGrid: 315px;
                 grid-area: image15;
                 width: 150px;
                 height: 150px;
+            }
+    }
+
+    .grid4 {
+        grid-template-areas: 
+            'image16 image16 image16'
+            'image19 image20 image20'
+            'image19 image18 image18'
+            'image17 image17 image17';
+            
+            & > .image16 {
+                grid-area: image16;
+                width: 100%;
+                height: 170px;
+            }
+            & > .image17 {
+                grid-area: image17;
+                width: 100%;
+                height: 160px;
+            }
+            & > .image18 {
+                grid-area: image18;
+                width: 185px;
+                height: 75px;
+            }
+            & > .image19 {
+                grid-area: image19;
+                width: 120px;
+                height: 180px;
+            }
+            & > .image20 {
+                grid-area: image20;
+                width: 185px;
+                height: 100px;
             }
     }
 
