@@ -9,7 +9,7 @@ $widthGrid: 315px;
 .galleryContainer {
 	width: 90%;
 	position: relative;
-	overflow:hidden;
+	// overflow:hidden;
     box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
     background: white;
     border-bottom: 3px solid #fff;
@@ -134,20 +134,21 @@ $widthGrid: 315px;
 
     .grid4 {
         grid-template-areas: 
-            'image16 image16 image16'
-            'image19 image20 image20'
+            'image20 image20 image20'
+            'image19 image17 image17'
             'image19 image18 image18'
-            'image17 image17 image17';
+            'image16 image16 image16';
             
             & > .image16 {
                 grid-area: image16;
                 width: 100%;
-                height: 170px;
+                height: 150px;
             }
             & > .image17 {
                 grid-area: image17;
-                width: 100%;
-                height: 160px;
+                width: 185px;
+                height: 100px;
+                
             }
             & > .image18 {
                 grid-area: image18;
@@ -161,8 +162,44 @@ $widthGrid: 315px;
             }
             & > .image20 {
                 grid-area: image20;
-                width: 185px;
-                height: 100px;
+                width: 100%;
+                height: 180px;
+               
+            }
+    }
+
+    .grid5 {
+        grid-template-areas: 
+            'image21 image21 image22'
+            'image24 image24 image24'
+            'image23 image23 image25';
+            
+            & > .image21 {
+                grid-area: image21;
+                width: 200px;
+                // height: 150px;
+            }
+            & > .image22 {
+                grid-area: image22;
+                width: 110px;
+                // height: 100px;
+                
+            }
+            & > .image24 {
+                grid-area: image24;
+                width: 100%;
+                height: 75px;
+            }
+            & > .image23 {
+                grid-area: image23;
+                width: 160px;
+                // height: 180px;
+            }
+            & > .image25 {
+                grid-area: image25;
+                width: 140px;
+                height: 180px;
+               
             }
     }
 
