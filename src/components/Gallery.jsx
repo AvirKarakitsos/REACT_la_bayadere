@@ -13,6 +13,12 @@ function Gallery() {
                     </div>
                 ))
                 }
+                {arrGrid.map((grid) => (
+                    <div key={grid} className={`slide grid${grid}`}>
+                        {arrImages.map((image) => (<img key={image} src={`./gallery/img${image+(5*(grid-1))}.jpeg`} className={`image${image+(5*(grid-1))}`}/>))}
+                    </div>
+                ))
+                }
             </div>
         </div>
     )
