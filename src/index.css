@@ -21,8 +21,8 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-h1, h2 {
-  font-family: Montserrat, Geneva, Helvetica, sans-serif;
+h2, p {
+  font-family: 'Montserrat', sans-serif;
 }
 
 img {
