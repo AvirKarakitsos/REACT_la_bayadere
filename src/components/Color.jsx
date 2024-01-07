@@ -11,7 +11,7 @@ function Color() {
         offset: ["0 1", "1.5 1"]
     })
     
-    const speed = useTransform(scrollYProgress, [0,1], ["-400%","282%"])
+    const speed = useTransform(scrollYProgress, [0,1], ["-465%","400%"])
 
     return (
         <div className="container colorContainer">

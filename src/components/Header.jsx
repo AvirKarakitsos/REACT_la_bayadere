@@ -11,7 +11,7 @@ function Header() {
         offset: ["start start", "end start"]
     })
 
-    const backgroundDansers = useTransform(scrollYProgress, [0,1], ["0%","400%"])
+    const backgroundDansers = useTransform(scrollYProgress, [0,1], ["0px", "600%"])
     const title = useTransform(scrollYProgress, [0,1], ["0%","100%"])
 
     return (
