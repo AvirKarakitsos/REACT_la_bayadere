@@ -1,4 +1,4 @@
-$animationSpeed: 100s;
+$animationSpeed: 125s;
 $widthGrid: 315px;
 
 @keyframes scroll {
@@ -10,7 +10,6 @@ $widthGrid: 315px;
 	width: 90%;
 	position: relative;
 	overflow:hidden;
-    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
     background: white;
     border-bottom: 3px solid #fff;
 
@@ -23,13 +22,13 @@ $widthGrid: 315px;
     .slide {
         height: 500px;
 		width: $widthGrid;
-        padding: 3px;
         display: grid;
-        gap: 5px;
+        // gap: 5px;
         overflow: hidden;
         
         img {
             object-fit: cover;
+            padding: 1px;
         }
 	}
 
@@ -46,7 +45,7 @@ $widthGrid: 315px;
             }
             & > .image2 {
                 grid-area: image2;
-                width: 115px;
+                width: 100%;
                 height: 155px;
             }
             & > .image3 {
@@ -56,13 +55,13 @@ $widthGrid: 315px;
             }
             & > .image4 {
                 grid-area: image4;
-                width: 200px;
+                width: 100%;
                 height: 165px;
             }
             & > .image5 {
                 grid-area: image5;
                 width: 100%;
-                height: 180px;
+                height: 100%;
             }
     }
 
@@ -75,44 +74,44 @@ $widthGrid: 315px;
             & > .image6 {
                 grid-area: image6;
                 width: 120px;
-                height: 135px;
+                height: 100%;
             }
             & > .image7 {
                 grid-area: image7;
                 width: 170px;
-                height: 195px;
+                height: 200px;
             }
             & > .image8 {
                 grid-area: image8;
-                width: 140px;
-                height: 195px;
+                width: 145px;
+                height: 200px;
             }
             & > .image9 {
                 grid-area: image9;
-                width: 185px;
-                height: 135px;                
+                width: 100%;
+                height: 100%;              
             }
             & > .image10 {
                 grid-area: image10;
                 width: 100%;
-                height: 160px;
+                height: 195px;
             }
     }
 
     .grid3 {
         grid-template-areas: 
-            'image11 image12 image12'
-            'image13 image13 image13'
-            'image15 image15 image14';
+            'image11 image12 image12 image12'
+            'image13 image13 image13 image13'
+            'image15 image15 image14 image14';
             
             & > .image11 {
                 grid-area: image11;
-                width: 130px;
+                width: 125px;
                 height: 190px;
             }
             & > .image12 {
                 grid-area: image12;
-                width: 170px;
+                width: 100%;
                 height: 190px;
             }
             & > .image13 {
@@ -122,13 +121,13 @@ $widthGrid: 315px;
             }
             & > .image14 {
                 grid-area: image14;
-                width: 150px;
+                width: 100%;
                 height: 175px;
             }
             & > .image15 {
                 grid-area: image15;
-                width: 150px;
-                height: 150px;
+                width: 100%;
+                height: 100%;
             }
     }
 
@@ -147,7 +146,7 @@ $widthGrid: 315px;
             & > .image17 {
                 grid-area: image17;
                 width: 185px;
-                height: 100px;
+                height: 105px;
                 
             }
             & > .image18 {
@@ -157,7 +156,7 @@ $widthGrid: 315px;
             }
             & > .image19 {
                 grid-area: image19;
-                width: 120px;
+                width: 130px;
                 height: 180px;
             }
             & > .image20 {
@@ -177,12 +176,12 @@ $widthGrid: 315px;
             & > .image21 {
                 grid-area: image21;
                 width: 180px;
-                height: 140px;
+                height: 145px;
             }
             & > .image22 {
                 grid-area: image22;
-                width: 120px;
-                height: 140px;
+                width: 100%;
+                height: 145px;
                 
             }
             & > .image24 {
@@ -197,7 +196,7 @@ $widthGrid: 315px;
             }
             & > .image25 {
                 grid-area: image25;
-                width: 120px;
+                width: 100%;
                 height: 180px;
                
             }
