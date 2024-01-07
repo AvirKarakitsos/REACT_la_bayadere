@@ -2,25 +2,46 @@
     width: 100%;
     display: grid;
     grid-template-columns: 23% 1fr 23%;
+   
 
     &__image > img {
         height: 325px;
         width: 100%;
+        position: relative;
         object-fit: cover;
     }
 
     &__text {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
+        row-gap: 15px;
 
-        & > p {
+        p {
             width: 60%;
-            text-align: justify;
-            font-size: 17px;
-            &::first-letter {
-                font-size: 25px;
-            }
         }
+    }
+
+    &::before {
+        content: '';
+        height: 15%;
+        width: 75%;
+        position: absolute;
+        top: 0;
+        left: 15%;
+        border-top: 1px solid wheat;
+        border-right: 1px solid wheat;
+    }
+
+    &::after {
+        content: '';
+        height: 14%;
+        width: 75%;
+        position: absolute;
+        bottom: 0;
+        left: 15%;
+        border-left: 1px solid wheat;
+        border-bottom: 1px solid wheat;
     }
 }

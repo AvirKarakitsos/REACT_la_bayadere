@@ -4,21 +4,17 @@ import ballet from "../assets/videos/ballet.mp4"
 
 function Nikiya() {
     return(
-        <div className='container'>
-            <h2>Nikiya</h2>
-            <div className="nikiyaContainer">
-                <div className="nikiyaContainer__text">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique tenetur illum ipsa corrupti ipsum praesentium neque quaerat vel dolores obcaecati molestiae veritatis ullam consequuntur, porro libero iure corporis, optio quasi.</p>
-                </div>
-                <div className="nikiyaContainer__videos">
-                    <video className="nikiyaContainer__videos--training" autoPlay muted loop>
-                        <source src={training} type="video/mp4"/>
-                    </video>
-                    <video className="nikiyaContainer__videos--ballet" autoPlay muted loop>
-                        <source src={ballet} type="video/mp4"/>
-                    </video>
-                </div>
-                
+        <div className=" container nikiyaContainer">
+            <div className="nikiyaContainer__text">
+                <p className="content"><span>Isabelle Guérin </span>lorem ipsum dolor sit amet consectetur adipisicing elit. Similique tenetur illum ipsa corrupti ipsum praesentium neque quaerat vel dolores obcaecati molestiae veritatis ullam consequuntur, porro libero iure corporis, optio quasi.</p>
+            </div>
+            <div className="nikiyaContainer__videos">
+                <video className="nikiyaContainer__videos--training" autoPlay muted loop>
+                    <source src={training} type="video/mp4"/>
+                </video>
+                <video className="nikiyaContainer__videos--ballet" autoPlay muted loop>
+                    <source src={ballet} type="video/mp4"/>
+                </video>
             </div>
         </div>
     )

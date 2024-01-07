@@ -14,17 +14,14 @@ function Color() {
     const speed = useTransform(scrollYProgress, [0,1], ["-400%","282%"])
 
     return (
-        <div className="container">
-            <h2>Les couleurs</h2>
-            <div className="colorContainer">
-                <div className="colorContainer__text">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut temporibus eligendi numquam sapiente id consequatur cupiditate, dolore odio harum nihil veritatis est nam doloribus assumenda itaque. Illum assumenda tempore eos?</p>
-                </div>
-                <div ref={ref} className="colorContainer__video">
-                    <motion.video style={ {y: speed, width: "400px"} } autoPlay muted loop>
-                        <source src={costumes} type="video/mp4"/>
-                    </motion.video>
-                </div>
+        <div className="container colorContainer">
+            <div className="colorContainer__text">
+                <p className='content'><span>La couleur </span>lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut temporibus eligendi numquam sapiente id consequatur cupiditate, dolore odio harum nihil veritatis est nam doloribus assumenda itaque. Illum assumenda tempore eos?</p>
+            </div>
+            <div ref={ref} className="colorContainer__video">
+                <motion.video style={ {y: speed, width: "400px"} } autoPlay muted loop>
+                    <source src={costumes} type="video/mp4"/>
+                </motion.video>
             </div>
         </div>
     )

@@ -6,20 +6,49 @@ main {
 }
 
 .container {
+    position: relative;
     width: 80%;
     max-width: 1200px;
     margin: 200px 0;
-    // border: 1px solid #fff;
+    padding: 100px 0;
 
-    & > h2 {
-        margin-bottom: 100px;
-        padding-left: 50px;
-        font-size: 50px;
+    &::after {
+        content: '';
+        height: 80px;
+        width: 75%;
+        position: absolute;
+        bottom: 0;
+        left: 15%;
+        border-left: 1px solid wheat;
+        border-bottom: 1px solid wheat;
+    }
+
+    &::before {
+        content: '';
+        height: 80px;
+        width: 75%;
+        position: absolute;
+        top: 0;
+        left: 15%;
+        border-top: 1px solid wheat;
+        border-right: 1px solid wheat;
+    }
+}
+
+.content {
+    text-align: justify;
+    font-size: 17px;
+    span {
+        font-size: 20px;
+        font-weight: 600;
+    }
+    &::first-letter {
+        font-size: 30px;
     }
 }
 
 footer {
-    margin: 100px;
+    margin: 250px 0;
     display: flex;
     justify-content: center;
     align-items: center;
