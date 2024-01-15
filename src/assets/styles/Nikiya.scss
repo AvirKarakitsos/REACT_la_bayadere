@@ -1,21 +1,37 @@
 .nikiyaContainer {
     &__text {
-        margin-bottom: 100px;
         display: flex;
-        justify-content: center;
+        justify-content: left;
         align-items: center;
-
+        
         & > p {
-            width: 50%;
+            padding: 0 25px;
+            width: 47%;
+        }
+
+        &--end {
+            justify-content: right;
         }
     }
 
     &__videos {
+        height: 150px;
+        position: relative;
         display: flex;
         justify-content: space-between;
-
+        
         & > video {
+            position: absolute;
             width: 400px;
+        }
+
+        &--ballet {
+            bottom: 65px;
+            left: 50%;
+        }
+        &--training {
+            top: 65px;
+            right: 50%;
         }
     }
 }

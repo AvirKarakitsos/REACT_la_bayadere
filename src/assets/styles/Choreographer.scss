@@ -1,15 +1,23 @@
 .choreoContainer {
-    width: 100%;
     display: grid;
     grid-template-columns: 23% 1fr 23%;
    
 
-    &__image > img {
-        height: 325px;
-        width: 100%;
-        position: relative;
-        object-fit: cover;
-    }
+    &__image {
+        > img {
+            height: 325px;
+            width: 100%;
+            position: relative;
+            object-fit: cover;
+        }
+
+        &--noureev {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+    } 
+    
 
     &__text {
         display: flex;
