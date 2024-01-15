@@ -19,7 +19,9 @@
 }
 
 .scoresContainer {
-    position: relative;
+    height: 300px;
+    width: 100%;
+    position: absolute;
     display: flex;
     justify-content: flex-end;
 
