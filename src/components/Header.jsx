@@ -13,8 +13,8 @@ function Header() {
     })
 
     const backgroundDansers = useTransform(scrollYProgress, [0,1], ["0px", "700%"])
-    const backgroundFloor = useTransform(scrollYProgress, [0,1], ["0px", "500%"])
-    const title = useTransform(scrollYProgress, [0,1], ["0%","200%"])
+    const backgroundFloor = useTransform(scrollYProgress, [0,1], ["0px", "600%"])
+    const title = useTransform(scrollYProgress, [0,1], ["0%","100%"])
 
     return (
         <div ref={ref} className="headerContainer">
