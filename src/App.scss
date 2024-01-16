@@ -11,18 +11,14 @@ main {
     max-width: 1200px;
     margin: 200px 0;
     padding: 100px 0;
-
-    &::after {
-        content: '';
-        height: 80px;
-        width: 75%;
-        position: absolute;
-        bottom: 0;
-        left: 15%;
-        border-left: 1px solid wheat;
-        border-bottom: 1px solid wheat;
+    @media screen and (max-width:1080px) {
+        width: 85%;
     }
-
+    @media screen and (max-width:768px) {
+        width: 100%;
+        padding: 50px 10px;
+    }
+    
     &::before {
         content: '';
         height: 80px;
@@ -33,11 +29,34 @@ main {
         border-top: 1px solid wheat;
         border-right: 1px solid wheat;
     }
+
+    &::after {
+        content: '';
+        height: 80px;
+        width: 75%;
+        position: absolute;
+        bottom: 0;
+        left: 15%;
+        z-index: -1;
+        border-left: 1px solid wheat;
+        border-bottom: 1px solid wheat;
+    }
+
+    @media screen and (max-width:768px) {
+        &::after, &::before {
+            height: 50px;
+        }
+    }
+    
 }
 
 .content {
     text-align: justify;
     font-size: 17px;
+    @media screen and (max-width:768px) {
+        font-size: 16px;
+      }
+      
     span {
         font-size: 20px;
         font-weight: 600;
@@ -52,8 +71,12 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     
     & > p {
         font-size: 100px;
+        @media screen and (max-width: 768px) {
+           font-size: 65px;
+        }
     }
 }

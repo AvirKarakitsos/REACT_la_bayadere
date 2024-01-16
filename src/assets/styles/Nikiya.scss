@@ -3,14 +3,24 @@
         display: flex;
         justify-content: left;
         align-items: center;
+        @media screen and (max-width: 768px) {
+           justify-content: center;
+        }
         
         & > p {
             padding: 0 25px;
             width: 47%;
+            @media screen and (max-width: 768px) {
+                width: 100%;
+                max-width: 350px;
+            }
         }
 
         &--end {
             justify-content: right;
+             @media screen and (max-width: 768px) {
+                justify-content: center;
+            }
         }
     }
 
@@ -19,6 +29,10 @@
         position: relative;
         display: flex;
         justify-content: space-between;
+
+        @media screen and (max-width: 768px) {
+            height: 400px;
+        }
         
         & > video {
             position: absolute;
@@ -31,10 +45,19 @@
         &--ballet {
             bottom: 65px;
             left: 50%;
+            @media screen and (max-width: 768px) {
+                left: 0;
+                bottom: 0;
+            }
         }
+
         &--training {
             top: 65px;
             right: 50%;
+            @media screen and (max-width: 768px) {
+                right: 0;
+                top: 0;
+            }
         }
     }
 }

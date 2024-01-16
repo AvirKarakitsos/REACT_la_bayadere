@@ -42,10 +42,28 @@
         } 
     
         &__text {
-            row-gap: 15px;
-    
             p {
                 width: 75%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .choreoContainer {
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    
+        &__image {
+            > img {
+                max-width: 200px;
+            }
+        } 
+    
+        &__text {
+            p {
+                width: 100%;
+                max-width: 300px;
             }
         }
     }
