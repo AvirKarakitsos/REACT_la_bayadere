@@ -35,5 +35,9 @@
         text-shadow: 1px 1px 0px #101010;
         text-transform: uppercase;
         z-index: 30;
+
+        @media screen and (max-width: 1080px) {
+            font-size: 100px;
+        }
     }
 }

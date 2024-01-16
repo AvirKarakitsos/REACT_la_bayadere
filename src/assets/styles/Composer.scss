@@ -1,19 +1,31 @@
 .composerContainer {
     display: flex;
+    justify-content: center;
 
     &__image > img {
-          
             height: 400px;
             object-fit: cover;
+            
+            @media screen and (max-width: 1080px) {
+                height: 300px;
+            }
     }
 
     &__text {
+        max-width: 600px;
         display: flex;
         justify-content: center;
         align-items: center;
 
+        @media screen and (max-width: 1080px) {
+            max-width: 550px;
+        }
+
         & > p {
             width: 60%;
+            @media screen and (max-width: 1080px) {
+                width: 80%;
+            }
         }
     }
 }
@@ -25,24 +37,30 @@
     display: flex;
     justify-content: flex-end;
 
+    @media screen and (max-width: 1080px) {
+        width: 110%;
+    }
+
     &__score {
         position: absolute;
         right: 0;
+        
+        @media screen and (max-width: 1080px) {
+            top: 25px;
+            height: 200px;
+        }
+
         &--score1 {
             z-index: 40;
-            // transform: translateX(-500px) rotate(-20deg);
         }
         &--score2 {
             z-index: 30;
-            // transform: translate(-300px,-20px);
         }
         &--score3 {
             z-index: 20;
-            // transform: translateX(-150px) rotate(20deg);
         }
         &--score4 {
             z-index: 10;
-            // transform: rotate(5deg);
         }
     }
 

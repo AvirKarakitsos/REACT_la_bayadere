@@ -1,7 +1,6 @@
 .choreoContainer {
     display: grid;
     grid-template-columns: 23% 1fr 23%;
-   
 
     &__image {
         > img {
@@ -28,6 +27,26 @@
 
         p {
             width: 60%;
+        }
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .choreoContainer {
+        grid-template-columns: 25% 1fr 25%;
+    
+        &__image {
+            > img {
+                height: 250px;
+            }
+        } 
+    
+        &__text {
+            row-gap: 15px;
+    
+            p {
+                width: 75%;
+            }
         }
     }
 }
