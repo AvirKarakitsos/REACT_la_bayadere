@@ -2,6 +2,13 @@
     display: flex;
     justify-content: center;
 
+    @media screen and (max-width: 768px) {
+        display: block;
+        &__image {
+            float: left;
+        }
+    }
+
     &__image > img {
             height: 400px;
             object-fit: cover;
@@ -16,30 +23,33 @@
         display: flex;
         justify-content: center;
         align-items: center;
-
         @media screen and (max-width: 1080px) {
+            width: 100%;
             max-width: 550px;
         }
+        @media screen and (max-width: 768px) {
+           display: block;
+        }
 
-        & > p {
+        > p {
             width: 60%;
             @media screen and (max-width: 1080px) {
-                width: 80%;
+                width: 100%;
             }
         }
     }
 }
 
 .scoresContainer {
-    height: 300px;
+    height: 150px;
     width: 100%;
-    position: absolute;
-    display: flex;
-    justify-content: flex-end;
+    position: relative;
 
     &__score {
+        height: 300px;
         position: absolute;
         right: 0;
+        top: 15px;
         
         @media screen and (max-width: 1080px) {
             top: 25px;
@@ -57,6 +67,24 @@
         }
         &--score4 {
             z-index: 10;
+        }
+
+        @media screen and (max-width:760px) {
+            &--score1 {
+                transform: translateX(-230px) rotate(-20deg);
+            }
+            &--score2 {
+                transform: translateX(-200px) rotate(-10deg);
+            }
+            &--score3 {
+                transform: translateX(-160px) rotate(25deg);
+            }
+            &--score4 {
+                transform: translateX(-80px) rotate(-5deg);
+            }
+            &--score5 {
+                transform: translateX(-25px) rotate(10deg);
+            }
         }
     }
 

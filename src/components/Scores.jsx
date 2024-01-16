@@ -1,13 +1,28 @@
 import '../assets/styles/Composer.scss'
-import { useRef } from 'react'
+import { useRef, useState, useEffect } from 'react'
 import { motion, useScroll, useTransform } from 'framer-motion'
 
 function Scores() {
     const scoreRef = useRef(null)
+    const  [windowWidth,setWindowWidth] = useState(window.innerWidth)
+
+    useEffect(() => {
+        function handleSizeViewport() {
+            setWindowWidth(window.innerWidth)
+        }
+
+        window.addEventListener("resize",handleSizeViewport)
+
+        return() => {
+            window.removeEventListener("resize", handleSizeViewport)
+        }
+
+        
+    },[windowWidth])
     
     const {scrollYProgress} = useScroll({
         target: scoreRef,
-        offset: ["0.25 1", "1.33 1"]
+        offset: [".5 1", "1.5 1"]
     })
     
     const partion1Progress = useTransform(scrollYProgress, [0, 1], [0, -500])
@@ -35,11 +50,16 @@ function Scores() {
     
     return ( 
         <div  ref={scoreRef} className="scoresContainer">
-            {arr.map((score,index) => <motion.img 
+            {windowWidth > 768 
+                ? arr.map((score,index) => <motion.img 
+                    key={index} 
+                    style={ {rotate: score.rotate, x: score.x}}
+                    src={`./scores/score${index+1}.png`} alt={`partition ${index+1}`} 
+                    className={`scoresContainer__score scoresContainer__score--score${index+1}`} /> )
+                : arr.map((score,index) => <img 
                 key={index} 
-                style={ {rotate: score.rotate, x: score.x}}
                 src={`./scores/score${index+1}.png`} alt={`partition ${index+1}`} 
-                className={`scoresContainer__score scoresContainer__score--score${index}`} /> )
+                className={`scoresContainer__score scoresContainer__score--score${index+1}`} /> )
             }
         </div>
     )

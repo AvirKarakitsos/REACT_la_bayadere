@@ -51,20 +51,38 @@
 
 @media screen and (max-width: 768px) {
     .choreoContainer {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         justify-items: center;
-    
+
+        .smallContainer {
+            margin: 5px 0;
+        }
+       
         &__image {
+            padding: 5px 10px;
             > img {
                 max-width: 200px;
             }
         } 
     
-        &__text {
-            p {
-                width: 100%;
-                max-width: 300px;
-            }
+       &__image--petipa {
+        float: left;
+       }
+
+       &__image--noureev { 
+        float: right;
+        figcaption {
+            text-align: right;
         }
+       }
+
+       .content {
+        width: 100%;
+        max-width: 500px;
+       }
+    }
+
+    figcaption {
+        font-size: 15px;
     }
 }

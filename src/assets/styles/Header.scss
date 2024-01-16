@@ -49,7 +49,7 @@
         }
 
         @media screen and (max-width:768px) {
-            font-size: 70px;
+            font-size: clamp(50px, 10vw, 70px);
             bottom: 0px;
         }
     }
