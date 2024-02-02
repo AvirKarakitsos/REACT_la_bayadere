@@ -5,6 +5,7 @@ import Composer from './components/Composer.jsx'
 import Nikiya from './components/Nikiya.jsx'
 import Color from './components/Color.jsx'
 import Gallery from './components/Gallery.jsx'
+import Footer from './components/Footer.jsx'
 
 function App() {
 
@@ -18,9 +19,7 @@ function App() {
           <Color/>
           <Gallery/>
         </main>
-        <footer>
-          <p>Merci d&apos;avoir regardé</p>
-        </footer>
+        <Footer/>
       </>
   )
 }
