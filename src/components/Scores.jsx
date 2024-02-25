@@ -56,7 +56,8 @@ function Scores() {
                     style={ {rotate: score.rotate, x: score.x}}
                     src={`./scores/score${index+1}.png`} alt={`partition ${index+1}`} 
                     className={`scoresContainer__score scoresContainer__score--score${index+1}`} /> )
-                : arr.map((score,index) => <img 
+                : arr.map((score,index) => <img
+                loading='lazy'
                 key={index} 
                 src={`./scores/score${index+1}.png`} alt={`partition ${index+1}`} 
                 className={`scoresContainer__score scoresContainer__score--score${index+1}`} /> )

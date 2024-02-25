@@ -19,7 +19,7 @@ function Composer() {
         <div ref={imageRef}  className="container">
             <div className="composerContainer">
                 <motion.figure style={ {opacity: opacityProgress} }  className="composerContainer__image">
-                    <img src={minkus} alt="Ludwig Minkus"/>
+                    <img loading='lazy' src={minkus} alt="Ludwig Minkus"/>
                     <figcaption>Ludwig Minkus</figcaption>
                 </motion.figure>
                 <div className="composerContainer__text">

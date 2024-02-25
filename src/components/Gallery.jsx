@@ -9,13 +9,13 @@ function Gallery() {
             <div className="slide-track">
                 {arrGrid.map((grid) => (
                     <div key={grid} className={`slide grid${grid}`}>
-                        {arrImages.map((image) => (<img key={image} src={`./gallery/img${image+(5*(grid-1))}.jpeg`} className={`image${image+(5*(grid-1))}`}/>))}
+                        {arrImages.map((image) => (<img loading='lazy' key={image} src={`./gallery/img${image+(5*(grid-1))}.jpeg`} className={`image${image+(5*(grid-1))}`}/>))}
                     </div>
                 ))
                 }
                 {arrGrid.map((grid) => (
                     <div key={grid} className={`slide grid${grid}`}>
-                        {arrImages.map((image) => (<img key={image} src={`./gallery/img${image+(5*(grid-1))}.jpeg`} className={`image${image+(5*(grid-1))}`}/>))}
+                        {arrImages.map((image) => (<img loading='lazy' key={image} src={`./gallery/img${image+(5*(grid-1))}.jpeg`} className={`image${image+(5*(grid-1))}`}/>))}
                     </div>
                 ))
                 }
