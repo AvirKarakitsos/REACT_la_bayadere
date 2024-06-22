@@ -1,10 +1,10 @@
 ## Description
 
-Interface utilisateur (UI) d'un site pour un ballet de danse classique, codé avec React. Utilisation de la librairie *framer-motion* afin de réaliser des animations au scroll de la page: parralax, opacité...  
+Interface utilisateur (UI) présentant un ballet de danse classique, la Bayadère, codé avec React. Utilisation de la librairie *framer-motion* afin de réaliser des animations au scroll de la page: parallax, opacité...  
 
 Le site est en ligne à l'adresse : [https://labayadere.onrender.com](https://labayadere.onrender.com)
 
-**Tags**: *React, framer-motion, parralax*
+**Tags**: *React, framer-motion, parallax*
 
 <p align="center">
   <img src="./public/bayadere.png" alt="Illustration du site">
