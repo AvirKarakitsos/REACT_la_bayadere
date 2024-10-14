@@ -6,7 +6,7 @@ function Nikiya() {
     return(
         <div className=" container nikiyaContainer">
             <div className="nikiyaContainer__text nikiyaContainer__text--start">
-                <p className="content"><span>Nikiya </span>lorem ipsum dolor sit amet consectetur adipisicing elit. Similique tenetur illum ipsa corrupti ipsum praesentium neque quaerat vel dolores obcaecati molestiae veritatis ullam consequuntur, porro libero iure corporis, optio quasi.quaerat vel dolores obcaecati molestiae veritatis ullam consequuntur, porro libero iure corporis, optio quasi.</p>
+                <p className="content"><span>Nikiya </span>, la protagoniste de La Bayadère, est une bayadère sacrée, amoureuse du guerrier Solor. Son amour tragique est au cœur de l'intrigue, car elle meurt empoisonnée par jalousie. Après sa mort, son esprit hante Solor dans le célèbre "Royaume des Ombres", symbolisant l'amour éternel et la vengeance au-delà de la mort.</p>
             </div>
             <div className="nikiyaContainer__videos">
                 <video className="nikiyaContainer__videos--training" autoPlay muted loop>
@@ -17,7 +17,7 @@ function Nikiya() {
                 </video>
             </div>
             <div className="nikiyaContainer__text nikiyaContainer__text--end">
-                <p className="content"><span>Isabelle Guérin </span>lorem ipsum dolor sit amet consectetur adipisicing elit. Similique tenetur illum ipsa corrupti ipsum praesentium neque quaerat vel dolores obcaecati molestiae veritatis ullam consequuntur, porro libero iure corporis, optio quasi.quaerat vel dolores obcaecati molestiae veritatis ullam consequuntur, porro libero iure corporis, optio quasi.</p>
+                <p className="content"><span>Isabelle Guérin </span>, étoile du Ballet de l'Opéra de Paris, a marqué l'histoire de La Bayadère avec son interprétation de Nikiya dans la version de Rudolf Noureev. Sa performance, alliant technique impeccable et expressivité dramatique, a contribué à faire de ce rôle un des sommets de sa carrière. Elle reste une référence pour ce ballet emblématique.</p>
             </div>
         </div>
     )

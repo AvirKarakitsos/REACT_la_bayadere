@@ -16,7 +16,7 @@ function Color() {
     return (
         <div className="container colorContainer">
             <div className="colorContainer__text">
-                <p className='content'><span>La couleur </span>lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut temporibus eligendi numquam sapiente id consequatur cupiditate, dolore odio harum nihil veritatis est nam doloribus assumenda itaque. Illum assumenda tempore eos?</p>
+                <p className='content'><span>La couleur </span>, dans la production de La Bayadère par l'Opéra de Paris, sublime l'exotisme et le mysticisme de l'œuvre. Les costumes éclatants, inspirés de l'Inde, mêlent ors, rouges, et bleus profonds, tandis que les décors luxuriants contrastent avec le blanc pur des Ombres, renforçant la dimension spirituelle du ballet.</p>
             </div>
             <div ref={ref} className="colorContainer__video">
                 <motion.video style={ {y: speed, width: "400px"} } autoPlay muted loop>

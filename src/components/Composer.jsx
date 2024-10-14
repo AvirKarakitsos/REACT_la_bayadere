@@ -23,7 +23,7 @@ function Composer() {
                     <figcaption>Ludwig Minkus</figcaption>
                 </motion.figure>
                 <div className="composerContainer__text">
-                    <p className='content'><span>Minkus </span> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus velit veritatis aspernatur saepe iusto dolor repudiandae odit, necessitatibus reiciendis nobis ex suscipit hic facilis quibusdam doloremque, repellendus veniam consequatur asperiores!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus velit veritatis aspernatur saepe iusto dolor repudiandae odit, necessitatibus reiciendis nobis ex suscipit hic facilis quibusdam doloremque, repellendus veniam consequatur asperiores!</p>
+                    <p className='content'><span>Minkus</span>, compositeur autrichien reconnu pour ses musiques de ballet, a créé la partition de La Bayadère en 1877. Collaborateur régulier de Marius Petipa, Minkus a conçu une musique en harmonie parfaite avec la chorégraphie, soutenant à la fois l'intensité dramatique et la virtuosité technique des danseurs. Sa partition, riche en mélodies expressives et rythmes envoûtants, est essentielle à l'atmosphère exotique et mystique du ballet, contribuant à son succès durable sur les scènes mondiales.</p>
                 </div>
             </div>
             <Scores/>
